@@ -186,9 +186,9 @@
       </p>
     </div>
     <script>
-      const weddingTime = +new Date("9-9-2021");
+      const weddingTime = new Date("2021-09-09T09:00:00+02:00").getTime();
       setInterval(() => {
-        const currentTime = +new Date();
+        const currentTime = Date.now() ;
         const diffInMS = weddingTime - currentTime;
         document.getElementById("daysLeft").innerHTML = msToDays(diffInMS);
         document.getElementById("hoursLeft").innerHTML = msToHours(diffInMS);
