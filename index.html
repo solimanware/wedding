@@ -179,14 +179,14 @@
         <a class="mail" href="mailto:prof.o.soliman@gmail.com">تنورونا 😘</a>
       </p>
       <p class="text">
-        بعد <span id="daysLeft"></span> يوم ,
-        <span id="hoursLeft"></span> ساعة ,
-        <span id="minutesLeft"></span> دقيقة ,
+        بعد <span id="daysLeft"></span> يوم أو
+        <span id="hoursLeft"></span> ساعة أو
+        <span id="minutesLeft"></span> دقيقة أو
         <span id="secondsLeft"></span> ثانية
       </p>
     </div>
     <script>
-      const weddingTime = new Date("2021-09-09T09:00:00+02:00").getTime();
+      const weddingTime = new Date("2021-09-09T21:00:00+02:00").getTime();
       setInterval(() => {
         const currentTime = Date.now() ;
         const diffInMS = weddingTime - currentTime;
